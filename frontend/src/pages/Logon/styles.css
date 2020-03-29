@@ -6,7 +6,7 @@
 
     display: flex; /*ativa o flex-box layout*/
     align-items: center; /*alinha verticalmente*/
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .logon-container section.form {

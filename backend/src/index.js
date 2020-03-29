@@ -10,6 +10,7 @@ const routes = require('./routes');
 //Atribui-se o express a uma constante.
 const app = express();
 
+app.use(cors());
 /*
 *   Método "use" diz o que será usado na aplicação.
 *   Express.json() permite que o javascript receba um json no método post.
@@ -17,7 +18,6 @@ const app = express();
 */
 app.use(express.json());
 app.use(routes);
-app.use(cors());
 
 //Método "listen" recebe em porta o app deverá ser executado.
 app.listen(3333);
